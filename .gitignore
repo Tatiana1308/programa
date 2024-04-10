@@ -1,0 +1,56 @@
+#operaciones entre arreglos
+
+import numpy as np
+a= np.array([-1,10,15,20,25])
+print (a)
+
+b= np.array([3,4,7,9,56])
+print (b)
+
+c= a+b # se puede sumar +, multiplicar*, restar -, divir /
+print (c)
+
+d= b**2 # los asteriscos representan los exponentes
+print (d)
+
+f=np.sin(b)
+print (f)
+
+g= (b<2)
+print (g)
+
+h= a@b # @ es para hacer el producto punto
+print (h)
+
+b=b+1 #aqui estamos modificando b
+print (b)
+
+# la clase ndarray define:
+
+z= a.sum() #suma todos los elementos del arreglo
+print (z)
+
+l= a.min() # saca el numero menor del arreglo
+print (l)
+
+m= a.mean() #saca la media del arreglo
+print (m)
+
+o= np.add(a,b)
+print (o)
+
+p= np.round(a,b) # redondear a su elemento mas proximo
+print (p)
+
+q= np.floor(a,b)
+print (q)
+
+r= np.gradient(a,b)
+print (r)
+
+
+
+import numpy as np
+a= np.array([[5,10,-1,20,25],[3,6,4,8,12]])
+print (a)
+print (a.min(axis=0))
